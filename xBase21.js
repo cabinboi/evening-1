@@ -61,6 +61,13 @@ function audEnded(){
 
 
 
+ function homeButt(){
+    console.log("in homebutt");
+    location.href = 'https://cabinboi.github.io/in-progress/';
+  }
+
+
+
 function playButt(){  
   if(gStartCounter){
    console.log(`yes gCounter`);
@@ -77,12 +84,12 @@ function playButt(){
     document.documentElement.requestFullscreen();   ///********************
     gwd.actions.timeline.gotoAndPlay('page1', 'Begin');
   }
-  
-  
+    
   //  gwd.actions.timeline.gotoAndPause(objectId:String, labelName:String);
-   // document.getElementById("playText").innerHTML = ">";
-  
+   // document.getElementById("playText").innerHTML = ">";  
 }
+
+
           
 function fullscreen(){
   if(document.getElementById("Fscreen").innerHTML == "[  ]"){    ///GO FULLSCREEN    

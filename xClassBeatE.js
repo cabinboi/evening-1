@@ -33,6 +33,9 @@ class Beatengine {
   audCounter = 2; //using audios 2-6 for the random instrument files
   aud1ended = 1;  //pair
   aud1toplay =0;  //pair
+  //BREAKOUT special case
+  moveOutArr = ["assets/AUDIO/Brushs/58.ogg", "assets/AUDIO/Brushs/60.ogg"];
+  moveBackArr = ["assets/AUDIO/Brushs/57.ogg", "assets/AUDIO/Brushs/59.ogg"];
   
   action = 0;    // ***being set outside
   currentAction = 0;
@@ -197,6 +200,9 @@ class Beatengine {
                 if ( gFile.getRandomNum(10) >2) {           ////WAS 5      then 7       2
                   if (this.playSound){                                                /////////// SET UP THE SOUND
                     this.randAud = gFile.getRandomFile(this.playSound[0], this.playSound[1], this.playSound[2], this.playSound[3] );   
+                    ////BREAKOUT
+                     // console.log("this.randAud " + this.randAud);
+                    
                     this.audArray[this.audCounter].src = this.randAud;
                     this.audArray[this.audCounter].currentTime = 0;
                     this.audArray[this.audCounter].volume= gVolume * 1;
