@@ -141,7 +141,7 @@ function initBella(){
 
   var swapMatrix = topArr.concat(leftArr, bottArr, doorArr, midArr, rightArr);   
 //  var ranSwapper = new Animator(swapMatrix, 20000, 0, "ranImageAud", [gFolderBase, 8], 0, 0,  [gFolderBase + "AUDIO/Brushs/", 52, gFolderBase + "AUDIO/RJguitar1/", 29] ); 
-  var ranSwapper = new Animator(swapMatrix, 20000, 0, "ranImageAud", [gFolderBase, 8], 0, 0,  [gFolderBase + "AUDIO/Brushs/", 61, ] ); 
+  var ranSwapper = new Animator(swapMatrix, 2000000, 0, "ranImageAud", [gFolderBase, 8], 0, 0,  [gFolderBase + "AUDIO/Brushs/", 61, ] ); 
    gBeatEngine.animArray.push(ranSwapper); 
   
   document.getElementById("BELLA_NEW").style.opacity =  1;
